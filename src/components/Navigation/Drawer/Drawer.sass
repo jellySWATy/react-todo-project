@@ -1,0 +1,43 @@
+.Drawer 
+    position: fixed
+    left: 0
+    top: 0
+    width: 100%
+    max-width: 300px
+    height: 100%
+    padding: 20px 20px 0
+    box-sizing: border-box
+    background: #32454d
+    transform: translateX(0px)
+    transition: transform .22s ease-in
+    z-index: 90
+    &.close
+        transform: translateX(-300px)
+    .logo
+        font-size: 2rem
+        color: #ffffff
+        font-family: "Roboto", sans-serif
+        font-weight: bold
+        margin-bottom: 20px
+    ul
+        list-style: none
+        margin: 0
+        padding: 0
+        li
+            a 
+                display: block
+                font-family: "Roboto", sans-serif
+                background-color: rgba(#242e34, .4)
+                border-radius: 10px
+                margin-bottom: 15px
+                padding: 5px 10px
+                width: 100px
+                color: #fff
+                font-size: 1rem
+                text-decoration: none
+                position: relative
+                transition: all .3s
+                &:hover, &.active
+                    color: #fff
+                    background-color: #242e34
+
